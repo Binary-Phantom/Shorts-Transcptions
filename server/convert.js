@@ -13,7 +13,7 @@ export const convert = () =>
     ffmpeg.setFfmpegPath(ffmpegStatic)
     ffmpeg()
       .input(filePath)
-      .audioFrequency(16000)
+      .audioFrequency(40000)
       .audioChannels(1)
       .format("wav")
       .on("end", () => {
